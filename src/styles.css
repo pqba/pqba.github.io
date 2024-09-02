@@ -1,0 +1,140 @@
+:root,[data-theme="light"] {
+    --fg-color: black;
+    --bg-color: (253,253,255);
+  
+    --green:  rgb(174, 236, 174);
+    --blue: lightblue;
+    --purple: rgb(219, 185, 219);
+
+     --nav-bg: #f8f8f8;
+     --active: gray;
+     --linkfg: #577bdc;
+     --linkfg-alt: rgb(88, 143, 161);
+  }
+  [data-theme="dark"] {
+      --fg-color: (253,253,255);
+      --bg-color: black;
+  
+      --blue: #2654a4;
+      --green: #12ad7c;
+      --purple: rgb(142, 72, 157);
+
+  
+      --nav-bg: #313030;
+      --linkfg: white;
+}
+
+
+body {
+    font-family: 'Jetbrains Mono','Times New Roman', Times, serif;
+    background-color: var(--bg-color);
+    margin:1rem;
+}
+
+a {
+    color:var(--linkfg);
+}
+a:active {
+    color:var(--active);
+}
+a:hover {
+    font-weight: 600;
+}
+/*Links*/
+
+  
+/*Navbar*/
+.nav {
+    overflow:hidden;
+    background-color: var(--nav-bg);
+}
+.nav a {
+    float: left;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    font-size:medium;
+}
+.nav a.active {
+    color:rgb(0, 0, 0);
+}
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Colors */
+.lightgray-highlight {
+    background-color: rgb(235, 229, 229);
+}
+.gray-highlight {
+    background-color: lightgray;
+    font-weight: 500;
+}
+.blue-highlight {
+    background-color: var(--blue);
+}
+.green-highlight {
+    background-color: var(--green);
+}
+.purple-highlight {
+    background-color: var(--purple);
+}
+
+
+img.medium {
+    height:10rem;
+}
+img.small {
+    height: 5rem;
+}
+
+.github-img {
+    height:2rem;
+    width: 2rem;
+}
+
+/*Cats gallery on index*/
+.cats {
+    margin: 2rem;
+}
+
+.cats img {
+    padding: 0 1rem; 
+}
+
+/*PROJECTS*/
+#projlist a {
+    color:var(--linkfg-alt);
+}
+.tech-icons {
+    display: inline-block;
+}
+.tech-icons img {
+    max-height:2.5rem;
+    max-width: 2.5rem;
+}
+#projlist p.tech {
+    font-size: 45%;
+}
+
+/*BLOG*/
+
+.articles {
+    padding:2rem;
+}
+
+.articles .title {
+    text-align: center;
+    font-weight: 900;
+}
+/*Utils*/
+
+.content-center {
+    text-align: center;
+}
+
+.smaller-text {
+    font-size: 80%;
+}
+.tiny-text {
+    font-size: 50%;
+}

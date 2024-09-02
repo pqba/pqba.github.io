@@ -1,0 +1,12 @@
+# IDE directories
+.vscode/
+.idea/
+
+# Cache
+.DS_Store
+
+# Environment & Executables
+.env
+.exe
+.o
+
