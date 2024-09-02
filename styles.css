@@ -5,7 +5,7 @@
     --green:  rgb(174, 236, 174);
     --blue: lightblue;
     --purple: rgb(219, 185, 219);
-
+     --tags: rgb(190, 224, 202);
      --nav-bg: #f8f8f8;
      --active: gray;
      --linkfg: #577bdc;
@@ -19,7 +19,7 @@
       --green: #12ad7c;
       --purple: rgb(142, 72, 157);
 
-  
+      --tags: rgb(242, 221, 221);
       --nav-bg: #313030;
       --linkfg: white;
 }
@@ -126,6 +126,22 @@ img.small {
     text-align: center;
     font-weight: 900;
 }
+
+
+.tags {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tags li {
+    display: inline-block;
+    margin: 0 0.5rem;
+    padding: 0.25rem 1rem;
+    background-color: var(--tags);
+    text-align: center;
+}
+
 /*Utils*/
 
 .content-center {
