@@ -90,6 +90,7 @@ img.small {
 .github-img {
     height:2rem;
     width: 2rem;
+    padding-left:4rem;
 }
 
 /*Cats gallery on index*/
