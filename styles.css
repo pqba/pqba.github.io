@@ -5,6 +5,7 @@
     --green:  rgb(174, 236, 174);
     --blue: lightblue;
     --purple: rgb(219, 185, 219);
+    --red: #f3b4b4;
      --tags: rgb(190, 224, 202);
      --nav-bg: #f8f8f8;
      --active: gray;
@@ -77,6 +78,9 @@ a:hover {
 }
 .purple-highlight {
     background-color: var(--purple);
+}
+.red-highlight {
+    background-color: var(--red);
 }
 
 
