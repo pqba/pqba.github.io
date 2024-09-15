@@ -1,34 +1,44 @@
 :root,[data-theme="light"] {
     --fg-color: black;
-    --bg-color: (253,253,255);
+    --bg-color: rgb(253,253,255);
+    --highlight-text:black;
   
     --green:  rgb(174, 236, 174);
     --blue: lightblue;
     --purple: rgb(219, 185, 219);
     --red: #f3b4b4;
+    
      --tags: rgb(190, 224, 202);
      --nav-bg: #f8f8f8;
-     --active: gray;
+     --active: black;
      --linkfg: #577bdc;
      --linkfg-alt: rgb(88, 143, 161);
   }
   [data-theme="dark"] {
-      --fg-color: (253,253,255);
+      --fg-color: rgb(225, 225, 237);
       --bg-color: black;
+      --highlight-text:rgb(37, 35, 35);
   
       --blue: #2654a4;
       --green: #12ad7c;
       --purple: rgb(142, 72, 157);
+      --red: #c06666;
 
-      --tags: rgb(242, 221, 221);
+      --tags: rgb(90, 152, 101);
       --nav-bg: #313030;
-      --linkfg: white;
+      --active: rgb(208, 203, 203);
+      --linkfg: rgb(177, 177, 240);
+      --linkfg-alt: rgb(211, 199, 199);
 }
 
+html {
+    scrollbar-color: var(--blue) var(--bg-color);
+}
 
 body {
     font-family: 'Jetbrains Mono','Times New Roman', Times, serif;
     background-color: var(--bg-color);
+    color: var(--fg-color);
     margin:1rem;
 }
 
@@ -40,6 +50,16 @@ a:active {
 }
 a:hover {
     font-weight: 600;
+}
+/*Theme button*/
+#theme-toggle {
+    background:none;
+    border:none;
+    margin-right:1rem;
+}
+#theme-toggle img {
+    height:1rem;
+
 }
 /*Links*/
 
@@ -56,7 +76,7 @@ a:hover {
     font-size:medium;
 }
 .nav a.active {
-    color:rgb(0, 0, 0);
+    color:var(--active);
 }
 .nav a:hover {
     text-decoration: underline;
@@ -65,9 +85,11 @@ a:hover {
 /* Colors */
 .lightgray-highlight {
     background-color: rgb(235, 229, 229);
+    color:var(--highlight-text);
 }
 .gray-highlight {
     background-color: lightgray;
+    color:var(--highlight-text);
     font-weight: 500;
 }
 .blue-highlight {
