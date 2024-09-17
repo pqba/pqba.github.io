@@ -32,11 +32,18 @@ document.addEventListener('DOMContentLoaded', () => {
 // Changes image path based on theme value (light or dark)
 function setThemeImg(theme) {
     const toggleImage = document.getElementById('theme-image');
+    const ghImages = document.getElementsByClassName('github-img');
     if(theme == 'light') {
         toggleImage.src = 'static/moon_graphic.png';
+        for(let img of ghImages) {
+            img.src = 'static/gh-icon-light.png';
+        }
     }
     else if (theme == 'dark') {
         toggleImage.src = 'static/sun_graphic.png';
+        for(let img of ghImages) {
+            img.src = 'static/gh-icon-dark.png';
+        }
     }
     else {
         console.error("Invalid theme property.");
